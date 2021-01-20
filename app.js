@@ -13,5 +13,5 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use("/", index);
 
 app.listen(_PORT, () => {
-    console.log("Server Listening on port 3000");
+    console.log("Server Listening on port " + _PORT);
 })

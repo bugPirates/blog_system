@@ -6,6 +6,14 @@
     <title>Blog - Register</title>
 </head>
 <body>
+    <% if(errors) { %>
+        <ul>
+            <% for (Let i=0; i<errors.length; i++) { %>
+                <li style="color: red"><%= errors[i].msg %></li>
+                <% } %>
+        </ul>
+    <% } %>
+
     <form action="/register" method="POST">
         <input type="text" name="username" placeholder="Username"> <br>
         <input type="text" name="email" placeholder="E-mail"> <br>
